@@ -1,0 +1,8 @@
+./assignment3/cs231n/datasets/*
+*.png
+*.jpeg
+*.zip
+*.gz
+*.rar
+*.bmp
+*.jpg

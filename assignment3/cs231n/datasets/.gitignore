@@ -1,0 +1,5 @@
+coco_captioning
+*.npz
+*.index
+*.META
+squeezenet.ckpt.data-00000-of-00001
