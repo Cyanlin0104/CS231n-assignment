@@ -4,10 +4,12 @@ from builtins import range
 from six.moves import cPickle as pickle
 import numpy as np
 import os
-from scipy.misc import imread
+from imageio import imread
 import platform
 import cv2
 
+
+CIFAR10_DIR = 'C://Users//18379//source//CS231n-assignment//assignment1//cs231n//datasets//cifar-10-batches-py'
 def load_pickle(f):
     version = platform.python_version_tuple()
     if version[0] == '2':
@@ -53,8 +55,7 @@ def get_CIFAR10_data(num_training=49000, num_validation=1000, num_test=1000,
     condensed to a single function.
     """
     # Load the raw CIFAR-10 data
-    cifar10_dir = 'C://Users//18379//source//assignment1//cs231n//datasets//cifar-10-batches-py'
-    X_train, y_train, X_test, y_test = load_CIFAR10(cifar10_dir, hsv)
+    X_train, y_train, X_test, y_test = load_CIFAR10(CIFAR10_DIR, hsv)
 
     # Subsample the data
     mask = list(range(num_training, num_training + num_validation))

@@ -472,6 +472,3 @@ def temporal_softmax_loss(x, y, mask, verbose=False):
     dx = dx_flat.reshape(N, T, V)
 
     return loss, dx
-
-
-def rnn_sample(x, h0, Wx, Wh, b, W_embed):

@@ -6,7 +6,7 @@ import urllib.request, urllib.error, urllib.parse, os, tempfile
 import requests
 
 import numpy as np
-from scipy.misc import imread, imresize
+from imageio import imread
 import cv2
 
 """
